@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Ad Blocker",
+    "version": "1.0",
+    "description": "A simple ad blocker for Chrome work well on news sites.",
+    "browser_action": {
+        "default_icon": {
+            "64": "icon64.png",
+            "128": "icon128.png"
+        }
+    },
+    "permissions": ["webRequest", "webRequestBlocking", "storage", "<all_urls>"],
+    "icons": {
+        "64": "icon64.png",
+        "128": "icon128.png"
+    },
+    "background": {
+      "page": "background.html",
+      "persistent": true
+    }
+  }
+  
